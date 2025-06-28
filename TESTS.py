@@ -14,23 +14,23 @@
 # cv2.destroyAllWindows()
 
 
-# from twilio.rest import Client
-# import os
+from twilio.rest import Client
+import os
 
-# # Find your Account SID and Auth Token at twilio.com/console
-# # and set the environment variables. See http://twil.io/secure
-# account_sid = 'AC66ad3e70a0b0ae108f52f6cbf3079917'
-# auth_token = 'c87991f43c858afacb5e03625e87d954'
-# client = Client(account_sid, auth_token)
+# Find your Account SID and Auth Token at twilio.com/console
+# and set the environment variables. See http://twil.io/secure
+account_sid = 'AC66ad3e70a0b0ae108f52f6cbf3079917'
+auth_token = 'c87991f43c858afacb5e03625e87d954'
+client = Client(account_sid, auth_token)
 
-# message = client.calls \
-#     .create(
-#          twiml='<Response><Say>A message form Yash Akarsh; for Aditya Singh;    at what time we have to come for group study?;A message form Yash Akarsh; for Aditya Singh;    at what time we have to come for group study?</Say></Response> ',
-#          from_='+15756399534',
-#          to='+918425071425'
-#      )
+message = client.calls \
+    .create(
+         twiml='<Response><Say>A message form Yash Akarsh; for Aditya Singh;    at what time we have to come for group study?;A message form Yash Akarsh; for Aditya Singh;    at what time we have to come for group study?</Say></Response> ',
+         from_='+15756399534',
+         to='+918425071425'
+     )
 
-print('Hey!')
+# print('Hey!')
 
 
 # import pyautogui,os,time,wikipedia
